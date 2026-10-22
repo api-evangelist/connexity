@@ -1,25 +1,78 @@
 aid: connexity
+
 name: Connexity
-description: 'Connexity is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by bonfire-ventures) and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Connexity provides a suite of digital marketing and data-driven advertising solutions that help online retailers and brands acquire, engage, and retain customers. Leveraging a robust network of affiliate partners and sophisticated analytics, Connexity enables performance-based campaigns, audience targeting, and real-time reporting. The platform integrates with e-commerce sites, search engines, and social media to optimize ad spend and drive measurable ROI. Founded in 2004, the company continues to innovate in the affiliate marketing space, offering APIs for product feeds, transaction tracking, and partner management.'
+
 url: https://raw.githubusercontent.com/api-evangelist/connexity/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- Marketing
+- Advertising
+- Affiliate
+- DataAnalytics
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- bonfire-ventures
+
 common:
+- type: Hosts
+  url: hosts/connexity-hosts.yml
+- type: Vendors
+  url: vendors/connexity-vendors.yml
+- type: PrivacyPolicy
+  url: https://www.connexity.com/privacy-policy/
+- type: Login
+  url: https://publisher.connexity.com/login
+- type: Blog
+  url: https://www.connexity.com/blog/
+- type: GitHubOrganization
+  url: https://github.com/Connexity
+- type: DomainSecurity
+  url: security/connexity-domain-security.yml
 - type: Website
   url: https://www.connexity.com/
+
+apis: []
+
+x-backed-by:
+- bonfire-ventures
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-22'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://account.connexity.com/mcp
+    status: 401
+  - url: https://merchant.connexity.com/mcp
+    status: 401
+  - url: https://www.connexity.com/
+    status: 200
+x-enrichment:
+  date: '2026-10-22'
+  status: enriched
+  artifacts_added: 8
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

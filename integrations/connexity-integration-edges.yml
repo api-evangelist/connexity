@@ -1,0 +1,16 @@
+generated: '2026-10-22'
+method: none
+source:
+- https://zapier.com/apps/connexity/integrations
+- https://n8n.io/integrations/connexity/
+- https://composio.dev/toolkits/connexity
+- https://monid.ai/tools/connexity
+checked:
+- https://composio.dev/toolkits/connexity
+- https://monid.ai/tools/connexity
+- https://n8n.io/integrations/connexity/
+- https://zapier.com/apps/connexity/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
